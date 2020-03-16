@@ -1,0 +1,150 @@
+/*------------- CSS Menu -------------------*/
+.menu {
+  position: fixed;
+  top: 0;
+  margin-left: calc(50% - 512px);
+  width: 1024px;
+  height: 70px;
+  background-color: rgba(255,255,255,1);
+  color: #842c2e;
+  transition: background-color .5s, width .5s, left .5s, margin-left .5s;
+  z-index: 4;
+}
+
+/*.menu.transparencia {
+  background-color: rgba(255,255,255,.95);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}*/
+
+.menu.full {
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  transition: width .5s, left .5s, margin-left .5s;
+}
+
+.menu h1 {
+  display: none;
+}
+
+/*.menu .logo {
+  background-image: url('assets/img/Menu/logo.png');
+  background-size: 100% 100%;
+  width: 260px;
+  height: 55px;
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 7px;
+}*/
+
+.menu .logo {
+  height: 80%;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.menu ul {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.menu ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'AlegreyaSC', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+.menu a {
+  border: none;
+  text-decoration: none;
+  color: #842c2e;
+  transition: color .2s linear;
+}
+
+.menu a:hover {
+  color: #414142;
+  border-bottom: 1px solid #414142;
+}
+
+.menu .menu-bar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu ul {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .menu ul li {
+    padding: 5px;
+    font-size: 19px;
+  }
+
+  .menu .logo {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    width: 100%;
+  }
+
+  .menu ul {
+    display: none;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 100%;
+  }
+
+  .menu ul li {
+    display: block;
+    width: 100%;
+    background-color: rgba(255,255,255,.95);
+    padding-bottom: 20px;
+  }
+
+  .menu ul li:first-child {
+    padding-top: 20px;
+  }
+
+  .menu .menu-bar {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 70%;
+    color: #414142;
+    cursor: pointer;
+  }
+
+  /*.menu .menu-bar.rotate {
+    transform: rotate(90deg);
+  }*/
+}
+
+@media screen and (max-width: 600px) {
+  /*.menu .logo {
+    background-image: url('assets/img/Menu/icone.png');
+    background-size: 100% 100%;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+  }*/
+}

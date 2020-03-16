@@ -1,0 +1,415 @@
+/* FONTES ------------------------------------------------------------------- */
+
+@font-face {
+    font-family: AlegreyaSans;
+    src: url('assets/fonts/alegreya-sans/AlegreyaSans-Regular.otf');
+}
+
+@font-face {
+    font-family: AlegreyaSC;
+    src: url('assets/fonts/alegreya-sans/AlegreyaSansSC-Regular.otf');
+}
+
+@font-face {
+    font-family: RosarioItalic;
+    src: url('assets/fonts/rosario/Rosario-Italic.otf');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('assets/fonts/raleway/Raleway-Regular.ttf');
+}
+
+/* GLOBAL ------------------------------------------------------------------- */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#produtos {
+  padding-top: 90px;
+  border: 1px solid #ccc;
+  z-index: -10;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.section {
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  padding: 30px 0 60px 0;
+}
+
+.section h1 {
+  padding: .2em;
+  font: 50px 'AlegreyaSC', Arial, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  margin-top: .65em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'AlegreyaSans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+/* Imagens responsivas Frase */
+
+.section.frase {
+  background-image: url('assets/img/Frase/fundo320.jpg');
+}
+
+@media screen and (min-width: 321px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo640.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo800.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1024.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1280.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1920.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1920.jpg');
+  }
+}
+
+/* Imagens responsivas Equipe */
+
+.section.equipe {
+  background-image: url('assets/img/Equipe/equipe320.jpg');
+}
+
+@media screen and (min-width: 321px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe640.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe800.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1024.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1280.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1920.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1920.jpg');
+  }
+}
+
+
+/* Imagens responsivas Serviços */
+
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo320.png');
+  }
+
+@media screen and (min-width: 321px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo640.png');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo800.png');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo1024.png');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo1300.png');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo1300.png');
+  }
+}
+
+
+/* Imagens responsivas Jumbotron */
+
+/* Primeira */
+.jumbotron .primeira {
+  background-image: url('assets/img/Jumbotron/jumbotron1320.jpg');
+}
+
+@media screen and (min-width: 321px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron1640.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron1800.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11024.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11280.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11920.jpg');
+  }
+}
+
+/* Segunda */
+
+.jumbotron .segunda {
+  background-image: url('assets/img/Jumbotron/jumbotron2320.jpg');
+}
+
+@media screen and (min-width: 321px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron2640.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron2800.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21024.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21280.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21920.jpg');
+  }
+}
+
+/* Terceira */
+
+.jumbotron .terceira {
+  background-image: url('assets/img/Jumbotron/jumbotron3320.jpg');
+}
+
+@media screen and (min-width: 321px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron3640.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron3800.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31024.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31280.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31920.jpg');
+  }
+}
+
+/* Quarta */
+
+.jumbotron .quarta {
+  background-image: url('assets/img/Jumbotron/jumbotron4320.jpg');
+}
+
+@media screen and (min-width: 321px) {
+  .jumbotron .quarta {
+    background-image: url('assets/img/Jumbotron/jumbotron4640.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .quarta {
+    background-image: url('assets/img/Jumbotron/jumbotron4800.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .quarta {
+    background-image: url('assets/img/Jumbotron/jumbotron41024.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .quarta {
+    background-image: url('assets/img/Jumbotron/jumbotron41280.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .quarta {
+    background-image: url('assets/img/Jumbotron/jumbotron41440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .quarta {
+    background-image: url('assets/img/Jumbotron/jumbotron41920.jpg');
+  }
+}
+
+/* Imagens responsivas Produtos */
+
+/* Primeira */
+.section.produtos .primeira {
+  background-image: url('assets/img/Produtos/impressoras2.jpg');
+}
+@media screen and (min-width: 960px) {
+  .section.produtos .primeira {
+    background-image: url('assets/img/Produtos/impressoras.jpg');
+  }
+}
+
+/* Segunda */
+.section.produtos .segunda {
+  background-image: url('assets/img/Produtos/cameras2.jpg');
+}
+@media screen and (min-width: 960px) {
+  .section.produtos .segunda {
+    background-image: url('assets/img/Produtos/cameras.jpg');
+  }
+}
+
+/* Terceira */
+.section.produtos .terceira {
+  background-image: url('assets/img/Produtos/pdv_face2.jpg');
+}
+@media screen and (min-width: 960px) {
+  .section.produtos .terceira {
+    background-image: url('assets/img/Produtos/pdv_face.jpg');
+  }
+}

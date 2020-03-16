@@ -1,0 +1,310 @@
+.section.portfolio {
+  background-image: url('assets/img/Portfolio/logo-desenho.png');
+  background-repeat: no-repeat;
+  background-position: 110% -10%;
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+.section.portfolio h1 {
+  background-color: #8a2f30;
+  color: #fff;
+}
+
+.section.portfolio .ancoraSite {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.section.portfolio .laptop {
+  position: relative;
+  top: -30px;
+}
+
+.section.portfolio .laptop .nav-right,
+.section.portfolio .laptop .nav-left {
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  position: absolute;
+  top: -110px;
+  width: 70px;
+}
+
+.section.portfolio ul {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+.section.portfolio ul li {
+  display: inline-block;
+  width: 16%;
+  height: 70px;
+  background-color: #aaa;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5vw;
+  vertical-align: top;
+  padding-top: .5vw;
+  border-radius: 0 0 10px 10px;
+  background-color: #a00;
+}
+
+.section.portfolio .laptop .textoSolucao {
+  position: absolute;
+  top: 0;
+}
+
+.section.portfolio .laptop .solucao {
+  opacity: 1;
+  color: #000;
+}
+
+.section.portfolio .laptop .solucao p {
+  font-family: Arial;
+  font-size: 11pt;
+  font-weight: normal;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.section.portfolio .laptop .solucao h4 {
+  padding: 10px 0 10px 0;
+}
+
+.section.portfolio ul li:hover {
+  opacity: .7;
+}
+
+.section.portfolio span#list-port {
+  list-style: none;
+  text-decoration: none;
+}
+
+.section.portfolio .laptop {
+  background-image: url('assets/img/Portfolio/laptop.png');
+  background-size: 100% 100%;
+  width: 924px;
+  max-width: 100%;
+  height: 523px;
+  margin: auto;
+  margin-top: 0;
+  position: relative;
+}
+
+.section.portfolio .laptop .siteTela {
+  position: absolute;
+  height: 370px;
+  width: 730px;
+  margin-top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.section.portfolio .laptop .imageFull {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 370px;
+  background-size: cover;
+}
+
+.section.portfolio .laptop .solucao {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .section.portfolio .nav-left {
+    left: 16vw;
+  }
+
+  .section.portfolio .nav-right {
+    right: 16vw;
+  }
+
+  .section.portfolio ul li {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section.portfolio .laptop .siteTela {
+    width: 740px;
+  }
+
+  .section.portfolio .laptop .imageFull {
+    height: 340px;
+    background-size: cover; 
+  }
+
+  .section.portfolio ul li {
+    margin-bottom: 18px;
+    padding-top: 1vw;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section.portfolio .laptop {
+    width: 800px;
+    height: 486px;
+  }
+
+  .section.portfolio .laptop .siteTela {
+    width: 640px;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 10px;
+  }
+
+  .section.portfolio {
+    font-size: 3em;
+    width: 100%;
+    height: 450px;
+  }
+
+  .section.portfolio .ancoraSite {
+    height: 450px;
+  }
+
+  .section.portfolio ul {
+    z-index: 1000;
+  }
+
+  .section.portfolio ul li {
+    font-size: 2vw;
+    padding-top: 2vw;
+    height: 60px;
+  }
+
+  .section.portfolio ul a {
+    text-decoration: none;
+  }
+  
+  .section.portfolio .laptop {
+    top: -460px;
+    width: 400px;
+    height: 450px;
+    background-image: url('assets/img/Portfolio/mobile2.jpg');
+    background-position: 30px center;
+    background-size: cover;
+    margin: 0;
+    transform: rotate(-90deg);
+    left: 50%;
+    margin-left: -200px;
+  }
+
+  .section.portfolio .laptop .siteTela {
+    top: 86px;
+    width: 354px;
+    height: 200px;
+    left: 80px;
+    margin-left: -5px;
+    border: 0px solid #f00;
+    border-radius: 0;
+    transform: rotate(90deg);
+  }
+
+  .section.portfolio .laptop .imageFull {
+    height: 100%;
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .section.portfolio .laptop .solucao {
+    left: 0;
+    padding-left: 60px;
+  }
+  
+  .section.portfolio .laptop .solucao p {
+    left: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section.portfolio {
+    height: 650px;
+  }
+
+  .section.portfolio .ancoraSite {
+    height: 450px;
+    width:: 450px;
+    z-index: 0;
+  }
+  
+ .section.portfolio ul {
+    top: 40px;
+  }
+  
+ .section.portfolio ul li {
+    width: 120px;
+    height: 60px;
+    margin-bottom: 8px;
+    display: block;
+    border-radius: 0 5px 5px 0;
+    font-size: 3vw;
+    padding-top: 4vw;
+  }
+  
+  .section.portfolio .laptop {
+    top: -420px;
+    width: 220px;
+    height: 450px;
+    background-image: url('assets/img/Portfolio/mobile2.jpg');
+    background-position: center center;
+    background-size: cover;
+    left: calc(100% - 250px);
+    margin: 0;
+    transform: rotate(0);
+    height: 450px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  
+  .section.portfolio .laptop .siteTela {
+    width: 204px;
+    height: 355px;
+    top: 8px;
+    left: 50%;
+    margin-left: -103px;
+    border: 0px solid #f00;
+    border-radius: 0;
+    transform: rotate(0);
+  }
+
+  .section.portfolio .laptop .imageFull {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section.portfolio ul li {
+    width: 100px;
+    font-size: 3.5vw;
+  }
+  
+  .section.portfolio .laptop {
+    left: calc(100% - 230px);
+  }
+}

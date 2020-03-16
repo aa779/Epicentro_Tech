@@ -1,0 +1,142 @@
+.section.equipe {
+  top: 45px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.section.equipe:after {
+  content: '';
+  top: 0;
+  left: 0;
+  background-color: rgba(64,0,42,.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.section.equipe h1 {
+  color: #fff;
+  background-color: #3a0026;
+}
+
+.section.equipe .membros {
+  margin: 30px auto;
+}
+
+.section.equipe .membros ul {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section.equipe .membros li {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-size: 100% 100%;
+  background-position: center;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  transition: background-size .2s;
+	border-radius: 50%;
+}
+
+.section.equipe .membros li:hover {
+  background-size: 120% 120%;
+}
+
+.section.equipe .membros li:nth-child(1) {
+  background-image: url('assets/img/Equipe/alvaro.jpg');
+}
+
+.section.equipe .membros li:nth-child(2) {
+  background-image: url('assets/img/Equipe/gabriel.jpg');
+}
+
+.section.equipe .membros li:nth-child(3) {
+  background-image: url('assets/img/Equipe/clauverson2.jpg');
+}
+
+.section.equipe .membros li:nth-child(4) {
+  background-image: url('assets/img/Equipe/jessica.jpg');
+}
+
+.section.equipe .membros li:nth-child(5) {
+  background-image: url('assets/img/Equipe/joao.jpg');
+}
+
+.section.equipe .membros li:nth-child(6) {
+  background-image: url('assets/img/Equipe/henrique2.jpg');
+}
+
+.section.equipe span.nomeFuncao {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(83,25,63,.65);
+  opacity: 0;
+	border-radius: 50%;
+  /*transition: opacity .5s linear;*/ /* Ta dando bug no menu */
+}
+
+.section.equipe span.nomeFuncao:hover {
+  opacity: 1;
+}
+
+.section.equipe span.nomeFuncao p {
+  font-family: 'AlegreyaSans', Arial , sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0,0,0,.5);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section.equipe span.nomeFuncao p:first-child {
+  margin-top: 100px;
+}
+
+.section.equipe div.descricao {
+  padding: 0 4em;
+  font-family: 'AlegreyaSans', Arial , sans-serif;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-align: center;
+  display: block;
+  /* 
+  Originalmente estará com "display: none;" 
+  Qdo clicar na foto dispara uma ação no JS
+  que mostrará essa div "display: block;"
+  */
+}
+
+.section.equipe div.descricao li {
+  display: none;
+  line-height: 30px;
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .section.equipe .membros li {
+    margin: 2% 2%;
+  }
+
+  .section.equipe div.descricao {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section.equipe div.descricao {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+### Epicentro ###
+
+Options +SymLinksIfOwnerMatch -Indexes
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak|xsl|sql)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+<IfModule !mod_rewrite.c>
+    SetEnv HTTP_MOD_REWRITE No
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine on
+    RewriteBase /
+
+    ### SECURITY - Protect crucial files
+    RewriteRule ^(.*)\.sql$ - [F]
+    RewriteRule ^(.*)\.$ - [F]
+    
+    ## REDIRECT
+    RewriteCond %{HTTP_HOST} ^(epicentro\.net\.com)(:80)? [NC]
+    RewriteRule ^(.*) http://www.epicentro.net.com/$1 [R=301,L]
+    order deny,allow
+
+</IfModule>
+###

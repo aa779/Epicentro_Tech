@@ -1,0 +1,167 @@
+/* Contatos ----------------------------------------------------------------- */
+
+/* Resolução 320px - 600px */
+
+.section.contato {
+  background: url('assets/img/Contatos/background.png');
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'AlegreyaSC';
+  height: 100%;
+  overflow: hidden;
+}
+
+.section.contato:after {
+  background-color: rgba(255, 255, 255, 0.7);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.section.contato h1 {
+  background-color: rgba(255, 255, 255, 1);
+  color: #8a2f31;
+}
+
+.section.contato .form {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  color: #000;
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+  top: 30px;
+  margin-left: 10px;
+  width: calc(100% - 2em);
+  z-index: 2;
+}
+
+.section.contato #formul {
+  -moz-transition: top 1s;
+  -webkit-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+}
+
+.section.contato .form .full {
+  width: 100%;
+}
+
+.section.contato .form label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.section.contato .form label span.titulo {
+  display: inline-block;
+  padding-right: .5em;
+  text-align: right;
+}
+
+.section.contato .form input {
+  border: 0;
+  padding: .2em .5em;
+}
+
+.section.contato .form input.input {
+  display: inline-block;
+  width: 100%;
+}
+
+.section.contato .form input.enviar {
+  background-color: #c00;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font: 1em 'AlegreyaSC';
+  font-weight: bold;
+  padding: .5em 1em;
+  letter-spacing: 1px;
+}
+
+.section.contato .form textarea {
+  min-height: 100px;
+  padding: .5em;
+  resize: vertical;
+  width: 100%;
+}
+
+.section.contato .map-modal {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  height: 550px;
+  width: 1000px;
+  left: 50%;
+  top: 143px;
+  margin-left: -500px;
+  cursor: pointer;
+}
+
+.section.contato .fechar {
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
+  background-color: #c00;
+  border-radius: 5px;
+  color: #fff;
+  font: 1em 'AlegreyaSC';
+  font-weight: bold;
+  padding: 5px;
+  letter-spacing: 1px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.section.contato .map-modal .mapa {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: 0;
+}
+
+@media screen and (min-width: 601px) {
+  .section.contato .form {
+    width: calc(100% - 6em);
+  }
+
+  .section.contato .form textarea {
+    min-height: 100px;
+  }
+  
+  .section.contato .fechar {
+    width: 80px;
+    left: 50%;
+    margin-left: 420px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.contato .wrapper {
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    border: 0px solid #000;
+  }
+
+  .section.contato .form {
+    top: 130px;
+    top: 130px;
+    left: 0;
+    position: absolute;
+    width: 25vw;
+  }
+  
+  .section.contato .fechar {
+    top: 200px;
+    left: 50%;
+    margin-left: 380px;
+  }
+}
